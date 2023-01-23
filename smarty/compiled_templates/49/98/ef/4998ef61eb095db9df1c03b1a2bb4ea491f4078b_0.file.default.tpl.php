@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2021-09-01 23:28:02
+/* Smarty version 3.1.30, created on 2023-01-23 16:57:45
   from "/Applications/MAMP/htdocs/night/templates/default.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_61300c82623867_53435730',
+  'unifunc' => 'content_63cebc892e3ba5_23315457',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4998ef61eb095db9df1c03b1a2bb4ea491f4078b' => 
     array (
       0 => '/Applications/MAMP/htdocs/night/templates/default.tpl',
-      1 => 1630508408,
+      1 => 1674493058,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61300c82623867_53435730 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cebc892e3ba5_23315457 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once '/Applications/MAMP/htdocs/night/includes/libs/plugins/modifier.date_format.php';
 ?>
-<section class="top-section text-center">
+<section class="top-section">
 	<div class="logo-container">
 		<?php echo '<?xml ';?>
 version="1.0" encoding="utf-8"<?php echo '?>';?>
@@ -53,108 +53,92 @@ version="1.0" encoding="utf-8"<?php echo '?>';?>
 	</div>
 </section>
 
-<section class="intro text-center">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-				<div class="intro-text">
-					
-					<p>
-						† A DANCE NIGHT FOR ALL THINGS DARK †<br />
-						NEW HAVEN, CT
-					</p>
-					<p>DARKWAVE - GOTH - INDUSTRIAL - POST-PUNK - EBM - WITCH HOUSE - DEATH ROCK - ETC</p>
-					<p>A welcoming place for the Goths, Rivetheads, Baby Bats, Cyberpunks, Thrashers, Fetish Queens, Pastels, Elders, the Dark-Curious, and Alternative types.
-	All will find a home in the recesses of ₦‡₲H†.</p>
-										
-				</div>
-				
-				
+<section class="intro">
+	<div class="container-950">	
+		<div class="intro-text">
+			<p>
+				† A DANCE NIGHT FOR ALL THINGS DARK †<br />
+				NEW HAVEN, CT
+			</p>
+			<p>GOTH - DARKWAVE - INDUSTRIAL - POST-PUNK - ETC</p>
+			<p>A welcoming place for the Goths, Rivetheads, Baby Bats, Cyberpunks, Thrashers, Fetish Queens, Pastels, Elders, the Dark-Curious, and Alternative types.
+All will find a home in the recesses of ₦‡₲H†.</p>					
+		</div>
 
-				<div class="night-info">
-					<div class="info-inner">
-						<p>NIGHT is every 2nd Saturday <span class="responsive-break"><br></span>(sometimes 5th Saturday, too).</p> 
-						<p class="details"><a class="text-link" href="https://www.partnerscafe.com/" target="_blank">Partners Cafe</a> | 365 Crown St., New Haven | 10pm | FREE</p>
-					</div>
-				</div>
+		<div class="night-info">
+			<div class="info-inner">
+				<p>NIGHT is every 2nd Saturday <span class="responsive-break"><br></span>(sometimes 5th Saturday, too).</p> 
+				<p class="details"><a class="text-link" href="https://www.partnerscafe.com/" target="_blank">Partners Cafe</a> | 365 Crown St., New Haven | 10pm | FREE</p>
 			</div>
 		</div>
 	</div>
 </section>
 
 <section class="playlists">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-				<div class="playlist-wrapper text-center">
-					<h2 class="text-center">Playlists</h2>
-					<div class="selector">
-						<label class="select-label">
-							<select name="date-selector">
-								<option value="empty">--</option>
-								<?php
+	<div class="container-950">
+		<div class="playlist-wrapper">
+			<h2>Playlists</h2>
+			<div class="selector">
+				<label class="select-label">
+					<select name="date-selector">
+						<option value="empty">--</option>
+						<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['night_dates']->value, 'date');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['date']->value) {
 ?>
-								<option value="<?php echo $_smarty_tpl->tpl_vars['date']->value;?>
+						<option value="<?php echo $_smarty_tpl->tpl_vars['date']->value;?>
 "><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['date']->value,"%B %e, %Y");?>
 </option>
-								<?php
+						<?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-							</select>
-							<span class="select-span">Choose Date</span>
-						</label>
-					</div>
-					<div class="playlist text-center">
-						<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
-						<ul>
-							
-						</ul>
-						<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
-						<button class="btn btn-goth-red close-list">X</button>
-					</div>
-					<p class="moon-icon bottom-moon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
-				</div>
+					</select>
+					<span class="select-span">Choose Date</span>
+				</label>
 			</div>
+			<div class="playlist">
+				<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
+				<ul>
+					
+				</ul>
+				<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
+				<button class="btn btn-goth-red close-list">X</button>
+			</div>
+			<p class="moon-icon bottom-moon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
 		</div>
 	</div>
 </section>
 					
 <footer>
-	<div class="container">
-		<div class="row sub-row justify-content-center">
-			<div class="col-md-5">
-				<div class="bottom-info text-center">
-					<div class="links">
-						<div class="fb-diamond diamond">
-							<a class="diamond-link" href="https://www.facebook.com/night.partners" target="_blank">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
-						</div>
-						<div class="ig-diamond diamond">
-							<a class="diamond-link" href="https://www.instagram.com/night.partners/" target="_blank">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-							</a>
-						</div>
-						<div class="contact-diamond diamond">
-							<a class="diamond-link" href="mailto:<?php echo $_smarty_tpl->tpl_vars['CONTACT_EMAIL']->value;?>
+	<div class="container-500">
+		<div class="bottom-info">
+			<div class="links">
+				<div class="fb-diamond diamond">
+					<a class="diamond-link" href="https://www.facebook.com/night.partners" title="NIGHT on Facebook" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="ig-diamond diamond">
+					<a class="diamond-link" href="https://www.instagram.com/gothnight.ct" title="NIGHT on Instagram" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="contact-diamond diamond">
+					<a class="diamond-link" title="Email" href="mailto:<?php echo $_smarty_tpl->tpl_vars['CONTACT_EMAIL']->value;?>
 ">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-					<img src="<?php echo $_smarty_tpl->tpl_vars['IMG_PATH']->value;?>
-/night_logo_silver.svg" />
-					
-					<p class="copy">Copyright &copy; <?php echo date('Y');?>
-</p>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</a>
 				</div>
 			</div>
+			<img src="<?php echo $_smarty_tpl->tpl_vars['IMG_PATH']->value;?>
+/night_logo_silver.svg" />
+			
+			<p class="copy">Copyright &copy; <?php echo date('Y');?>
+</p>
 		</div>
 	</div>
 </footer><?php }

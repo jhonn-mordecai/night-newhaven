@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2022-12-21 22:49:41
+/* Smarty version 3.1.30, created on 2023-01-23 17:42:00
   from "/Applications/MAMP/htdocs/night/templates/index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_63a38d85a74366_65485931',
+  'unifunc' => 'content_63cec6e8303154_79017761',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9fff447004ce9be6de4e8dd5d674f866ae1eb69d' => 
     array (
       0 => '/Applications/MAMP/htdocs/night/templates/index.tpl',
-      1 => 1671662828,
+      1 => 1674495717,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63a38d85a74366_65485931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cec6e8303154_79017761 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +55,7 @@ function content_63a38d85a74366_65485931 (Smarty_Internal_Template $_smarty_tpl)
 	
 <body <?php if ($_smarty_tpl->tpl_vars['page']->value->page_name == 'live') {?>class="extra-dark"<?php }?>>
 		
-		<div class="page-wrapper <?php if ($_smarty_tpl->tpl_vars['page']->value->page_name == 'login' || $_smarty_tpl->tpl_vars['page']->value->page_name == 'admin') {?>h-100<?php } elseif ($_smarty_tpl->tpl_vars['page']->value->page_name == 'default') {?>home-padding<?php }?>">
+		<div class="page-wrapper<?php if ($_smarty_tpl->tpl_vars['page']->value->page_name == 'default') {?> home-padding<?php }?>">
 			<?php $_smarty_tpl->_subTemplateRender($_smarty_tpl->tpl_vars['page']->value->template, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
 					

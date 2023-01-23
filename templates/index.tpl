@@ -29,7 +29,7 @@
 	
 <body {if $page->page_name == 'live'}class="extra-dark"{/if}>
 		
-		<div class="page-wrapper {if $page->page_name == 'login' || $page->page_name == 'admin'}h-100{elseif $page->page_name == 'default'}home-padding{/if}">
+		<div class="page-wrapper{if $page->page_name == 'default'} home-padding{/if}">
 			{include file=$page->template}					
 		</div> 
 		

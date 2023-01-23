@@ -42,6 +42,21 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+.container-1140 {
+	width:min(1140px, 100% - 3rem);
+	margin-inline:auto;
+}
+
+.container-950 {
+	width:min(950px, 100% - 2rem);
+	margin-inline:auto;
+}
+
+.container-500 {
+	width:min(500px, 100% - 2rem);
+	margin-inline:auto;
+}
+
 body.extra-dark {
 	background-color: #090909;
 }
@@ -117,17 +132,19 @@ section.top-section {
 	left:0;
 	width:100%;
 	z-index:-10;
+	text-align:center;
 }
 
 section.intro {
 	
 	padding-top:65px;
 	background:$gradient-dark;
-	background: -moz-linear-gradient(top, $gradient-transparent 5%, $gradient-dark 15%);
-	background: -webkit-linear-gradient(top, $gradient-transparent 5%, $gradient-dark 15%);
-	background: -o-linear-gradient(top, $gradient-transparent 5%, $gradient-dark 15%);
+	background: -moz-linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
+	background: -webkit-linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
+	background: -o-linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#181818',GradientType=0 );
-	background: linear-gradient(top,$gradient-transparent 5%, $gradient-dark 15%);
+	background: linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
+	text-align:center;
 
 	.intro-text {
 		padding:40px 0;
@@ -204,12 +221,13 @@ section.intro {
 section.playlists {
 
 	background:$gradient-dark;
-	background: -moz-linear-gradient(bottom, $gradient-transparent 5%, $gradient-dark 15%);
-	background: -webkit-linear-gradient(bottom, $gradient-transparent 5%, $gradient-dark 15%);
-	background: -o-linear-gradient(bottom, $gradient-transparent 5%, $gradient-dark 15%);
-	background: linear-gradient(bottom,$gradient-transparent 5%, $gradient-dark 15%);
+	background: -moz-linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
+	background: -webkit-linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
+	background: -o-linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
+	background: linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
 	padding-top:0;
 	font-size:1.3rem;
+	text-align:center;
 	
 	h2 {
 		margin-bottom:50px;
@@ -293,6 +311,7 @@ section.playlists {
 
 .bottom-info {
 	padding:45px 0 10px 0;
+	text-align:center;
 
 	img {
 		width:100px;
@@ -368,6 +387,15 @@ div.links {
 // LOGIN PAGE
 /////////////////
 
+section.login {
+	padding:1rem;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+}
+
 .login-container {
 	padding:25px;
 	border:$standard-border;
@@ -408,6 +436,7 @@ div.red-text {
 
 	.logo-container {
 		margin-bottom:50px;
+		text-align:center;
 
 		.admin-logo {
 			width:250px;
@@ -539,6 +568,11 @@ div.red-text {
 	font-style:italic;
 }
 
+#logout {
+	width:100%;
+	max-width:400px;
+	margin-inline:auto;
+}
 
 //////////////////
 // Live Page
@@ -562,6 +596,8 @@ div.red-text {
 
 .live-content-holder {
 	
+	width:min(1100px, 100% - 1.5rem);
+	margin-inline:auto;
 	
 	.iframe-contain {
 		margin-bottom:25px;
@@ -662,6 +698,8 @@ div.red-text {
 
 section.page-not-found {
 	
+	text-align:center;
+
 	h2 {
 		font-size:3rem;
 		margin-bottom:25px;

@@ -1,4 +1,4 @@
-<section class="top-section text-center">
+<section class="top-section">
 	<div class="logo-container">
 		<?xml version="1.0" encoding="utf-8"?>
 		<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -26,94 +26,78 @@
 	</div>
 </section>
 
-<section class="intro text-center">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-				<div class="intro-text">
-					
-					<p>
-						† A DANCE NIGHT FOR ALL THINGS DARK †<br />
-						NEW HAVEN, CT
-					</p>
-					<p>DARKWAVE - GOTH - INDUSTRIAL - POST-PUNK - EBM - WITCH HOUSE - DEATH ROCK - ETC</p>
-					<p>A welcoming place for the Goths, Rivetheads, Baby Bats, Cyberpunks, Thrashers, Fetish Queens, Pastels, Elders, the Dark-Curious, and Alternative types.
-	All will find a home in the recesses of ₦‡₲H†.</p>
-										
-				</div>
-				
-				
+<section class="intro">
+	<div class="container-950">	
+		<div class="intro-text">
+			<p>
+				† A DANCE NIGHT FOR ALL THINGS DARK †<br />
+				NEW HAVEN, CT
+			</p>
+			<p>GOTH - DARKWAVE - INDUSTRIAL - POST-PUNK - ETC</p>
+			<p>A welcoming place for the Goths, Rivetheads, Baby Bats, Cyberpunks, Thrashers, Fetish Queens, Pastels, Elders, the Dark-Curious, and Alternative types.
+All will find a home in the recesses of ₦‡₲H†.</p>					
+		</div>
 
-				<div class="night-info">
-					<div class="info-inner">
-						<p>NIGHT is every 2nd Saturday <span class="responsive-break"><br></span>(sometimes 5th Saturday, too).</p> 
-						<p class="details"><a class="text-link" href="https://www.partnerscafe.com/" target="_blank">Partners Cafe</a> | 365 Crown St., New Haven | 10pm | FREE</p>
-					</div>
-				</div>
+		<div class="night-info">
+			<div class="info-inner">
+				<p>NIGHT is every 2nd Saturday <span class="responsive-break"><br></span>(sometimes 5th Saturday, too).</p> 
+				<p class="details"><a class="text-link" href="https://www.partnerscafe.com/" target="_blank">Partners Cafe</a> | 365 Crown St., New Haven | 10pm | FREE</p>
 			</div>
 		</div>
 	</div>
 </section>
 
 <section class="playlists">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-				<div class="playlist-wrapper text-center">
-					<h2 class="text-center">Playlists</h2>
-					<div class="selector">
-						<label class="select-label">
-							<select name="date-selector">
-								<option value="empty">--</option>
-								{foreach from=$night_dates item=date}
-								<option value="{$date}">{$date|date_format:"%B %e, %Y"}</option>
-								{/foreach}
-							</select>
-							<span class="select-span">Choose Date</span>
-						</label>
-					</div>
-					<div class="playlist text-center">
-						<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
-						<ul>
-							{* Playlist items go here via Ajax *}
-						</ul>
-						<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
-						<button class="btn btn-goth-red close-list">X</button>
-					</div>
-					<p class="moon-icon bottom-moon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
-				</div>
+	<div class="container-950">
+		<div class="playlist-wrapper">
+			<h2>Playlists</h2>
+			<div class="selector">
+				<label class="select-label">
+					<select name="date-selector">
+						<option value="empty">--</option>
+						{foreach from=$night_dates item=date}
+						<option value="{$date}">{$date|date_format:"%B %e, %Y"}</option>
+						{/foreach}
+					</select>
+					<span class="select-span">Choose Date</span>
+				</label>
 			</div>
+			<div class="playlist">
+				<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
+				<ul>
+					{* Playlist items go here via Ajax *}
+				</ul>
+				<p class="moon-icon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
+				<button class="btn btn-goth-red close-list">X</button>
+			</div>
+			<p class="moon-icon bottom-moon"><i class="fa fa-moon-o" aria-hidden="true"></i></p>
 		</div>
 	</div>
 </section>
 					
 <footer>
-	<div class="container">
-		<div class="row sub-row justify-content-center">
-			<div class="col-md-5">
-				<div class="bottom-info text-center">
-					<div class="links">
-						<div class="fb-diamond diamond">
-							<a class="diamond-link" href="https://www.facebook.com/night.partners" target="_blank">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
-						</div>
-						<div class="ig-diamond diamond">
-							<a class="diamond-link" href="https://www.instagram.com/night.partners/" target="_blank">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-							</a>
-						</div>
-						<div class="contact-diamond diamond">
-							<a class="diamond-link" href="mailto:{$CONTACT_EMAIL}">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-					<img src="{$IMG_PATH}/night_logo_silver.svg" />
-					{* <p><a class="text-link" href="{$SITE_URL}/login">Admin</a></p> *}
-					<p class="copy">Copyright &copy; {'Y'|date}</p>
+	<div class="container-500">
+		<div class="bottom-info">
+			<div class="links">
+				<div class="fb-diamond diamond">
+					<a class="diamond-link" href="https://www.facebook.com/night.partners" title="NIGHT on Facebook" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="ig-diamond diamond">
+					<a class="diamond-link" href="https://www.instagram.com/gothnight.ct" title="NIGHT on Instagram" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="contact-diamond diamond">
+					<a class="diamond-link" title="Email" href="mailto:{$CONTACT_EMAIL}">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</a>
 				</div>
 			</div>
+			<img src="{$IMG_PATH}/night_logo_silver.svg" />
+			{* <p><a class="text-link" href="{$SITE_URL}/login">Admin</a></p> *}
+			<p class="copy">Copyright &copy; {'Y'|date}</p>
 		</div>
 	</div>
 </footer>
