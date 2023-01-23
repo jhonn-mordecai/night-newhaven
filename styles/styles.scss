@@ -328,58 +328,52 @@ section.playlists {
 	}
 }
 
-.diamond {
+.diamond-link {
 	border: $standard-border;
 	background-color:#1b1b1b;
-	width:65px;
-	height:65px;
+	width:75px;
+	height:75px;
 	line-height:1;
-	text-align:center;
-	transform:rotate(45deg);
+	rotate: 45deg;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	font-size:30px;
 
 	&:hover {
 		border-color:#000000;
-		//border-color:$goth-red;
+		color:#000000;
 		background-color:$dark-gray;
 		box-shadow:0 0 14px #292929;
+		text-decoration:none;
 		@include transition-time($standard-transition);
 	}
 }
 
-div.links {
+.diamond-link:hover .diamond-icon {color:#000000;}
+
+.bottom-info .links {
 	margin-bottom:50px;
-	
-	div.diamond {
-		display:inline-block;
-	}
+	display:flex;
+	gap:1rem;
+	justify-content:space-around;
 }
 
-.contact-diamond {
-	font-size:25px;
-}
-
-.fb-diamond, .ig-diamond {	
-	font-size:30px;
-	margin-right:60px;
-}
-
-.diamond-link {
+.diamond-icon {
 	color: $text-gray;
-	display:table-cell;
-	height:65px;
-	width:65px;
-	vertical-align:middle;
-	transform:rotate(-45deg);
+	rotate: -45deg;
 	@include transition-time($standard-transition);
 	
 	&:hover {
 		@include transition-time($standard-transition);
-		color:#000000;
+		text-decoration:none;
 	}
 	
 	&:active {
 		color: $text-gray;
 	}
+
+	.fa {display:unset;}
 }
 
 
@@ -905,27 +899,15 @@ section.page-not-found {
 	}
 }
 
-@media only screen and (min-width:768px) and (max-width:991px) {
-
-	.fb-diamond, .ig-diamond {	
-		font-size:30px;
-		margin-right:30px;
-	}
-
-}
-
 
 @media only screen and (max-width:352px) {
 
-	div.links div.diamond {
-		display:block;
-		margin:0 auto;
-		margin-bottom:50px;
+	.bottom-info .links {
+		flex-direction:column;
+		align-items:center;
+		gap:3.5rem;
 	}
 
-	.fb-diamond, .ig-diamond {	
-		font-size:30px;
-		margin-right:0;
-	}
-
+	section.playlists .selector {width:250px;}
+	section.playlists .selector .select-label {width:250px;}
 }

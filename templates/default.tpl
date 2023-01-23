@@ -79,24 +79,17 @@ All will find a home in the recesses of ₦‡₲H†.</p>
 	<div class="container-500">
 		<div class="bottom-info">
 			<div class="links">
-				<div class="fb-diamond diamond">
-					<a class="diamond-link" href="https://www.facebook.com/night.partners" title="NIGHT on Facebook" target="_blank">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="ig-diamond diamond">
-					<a class="diamond-link" href="https://www.instagram.com/gothnight.ct" title="NIGHT on Instagram" target="_blank">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="contact-diamond diamond">
-					<a class="diamond-link" title="Email" href="mailto:{$CONTACT_EMAIL}">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</a>
-				</div>
+				<a class="diamond-link" href="https://www.facebook.com/night.partners" title="NIGHT on Facebook" target="_blank">
+					<i class="fa fa-facebook diamond-icon" aria-hidden="true"></i>
+				</a>
+				<a class="diamond-link" href="https://www.instagram.com/gothnight.ct" title="NIGHT on Instagram" target="_blank">
+					<i class="fa fa-instagram diamond-icon" aria-hidden="true"></i>
+				</a>
+				<a class="diamond-link" title="Email" href="mailto:{$CONTACT_EMAIL}">
+					<i class="fa fa-envelope diamond-icon" aria-hidden="true"></i>
+				</a>
 			</div>
 			<img src="{$IMG_PATH}/night_logo_silver.svg" />
-			{* <p><a class="text-link" href="{$SITE_URL}/login">Admin</a></p> *}
 			<p class="copy">Copyright &copy; {'Y'|date}</p>
 		</div>
 	</div>

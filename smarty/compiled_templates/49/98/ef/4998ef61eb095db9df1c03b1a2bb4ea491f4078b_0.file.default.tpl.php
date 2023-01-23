@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2023-01-23 16:57:45
+/* Smarty version 3.1.30, created on 2023-01-23 21:21:07
   from "/Applications/MAMP/htdocs/night/templates/default.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_63cebc892e3ba5_23315457',
+  'unifunc' => 'content_63cefa43343ff0_48672287',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4998ef61eb095db9df1c03b1a2bb4ea491f4078b' => 
     array (
       0 => '/Applications/MAMP/htdocs/night/templates/default.tpl',
-      1 => 1674493058,
+      1 => 1674508864,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63cebc892e3ba5_23315457 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cefa43343ff0_48672287 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once '/Applications/MAMP/htdocs/night/includes/libs/plugins/modifier.date_format.php';
 ?>
 <section class="top-section">
@@ -117,22 +117,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 	<div class="container-500">
 		<div class="bottom-info">
 			<div class="links">
-				<div class="fb-diamond diamond">
-					<a class="diamond-link" href="https://www.facebook.com/night.partners" title="NIGHT on Facebook" target="_blank">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="ig-diamond diamond">
-					<a class="diamond-link" href="https://www.instagram.com/gothnight.ct" title="NIGHT on Instagram" target="_blank">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="contact-diamond diamond">
-					<a class="diamond-link" title="Email" href="mailto:<?php echo $_smarty_tpl->tpl_vars['CONTACT_EMAIL']->value;?>
+				<a class="diamond-link" href="https://www.facebook.com/night.partners" title="NIGHT on Facebook" target="_blank">
+					<i class="fa fa-facebook diamond-icon" aria-hidden="true"></i>
+				</a>
+				<a class="diamond-link" href="https://www.instagram.com/gothnight.ct" title="NIGHT on Instagram" target="_blank">
+					<i class="fa fa-instagram diamond-icon" aria-hidden="true"></i>
+				</a>
+				<a class="diamond-link" title="Email" href="mailto:<?php echo $_smarty_tpl->tpl_vars['CONTACT_EMAIL']->value;?>
 ">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</a>
-				</div>
+					<i class="fa fa-envelope diamond-icon" aria-hidden="true"></i>
+				</a>
 			</div>
 			<img src="<?php echo $_smarty_tpl->tpl_vars['IMG_PATH']->value;?>
 /night_logo_silver.svg" />
