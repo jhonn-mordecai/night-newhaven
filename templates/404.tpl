@@ -18,25 +18,17 @@
 	<div class="container-500">
 		<div class="bottom-info">
 			<div class="links">
-				<div class="fb-diamond diamond">
-					<a class="diamond-link" href="https://www.facebook.com/night.partners" target="_blank">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="ig-diamond diamond">
-					<a class="diamond-link" href="https://www.instagram.com/night.partners/" target="_blank">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="contact-diamond diamond">
-					<a class="diamond-link" href="mailto:{$CONTACT_EMAIL}">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</a>
-				</div>
+				<a class="diamond-link" href="https://www.facebook.com/night.partners" title="NIGHT on Facebook" target="_blank">
+					<i class="fa fa-facebook diamond-icon" aria-hidden="true"></i>
+				</a>
+				<a class="diamond-link" href="https://www.instagram.com/gothnight.ct" title="NIGHT on Instagram" target="_blank">
+					<i class="fa fa-instagram diamond-icon" aria-hidden="true"></i>
+				</a>
+				<a class="diamond-link" title="Email" href="mailto:{$CONTACT_EMAIL}">
+					<i class="fa fa-envelope diamond-icon" aria-hidden="true"></i>
+				</a>
 			</div>
-			<a href="{$SITE_URL}">
-				<img src="{$IMG_PATH}/night_logo_silver.svg" />
-			</a>
+			<img src="{$IMG_PATH}/night_logo_silver.svg" />
 			<p class="copy">Copyright &copy; {'Y'|date}</p>
 		</div>
 	</div>
