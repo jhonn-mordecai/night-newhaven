@@ -7,6 +7,7 @@
     require_once('includes/head.php');
 ?>
 
+<body>
     <div class="night-live-wrapper">
         
         <div class="night-live-header">
@@ -45,5 +46,5 @@
 		
 	<?php require_once('includes/bottom_matter.php'); ?>
 
-	</body>
+</body>
 </html>

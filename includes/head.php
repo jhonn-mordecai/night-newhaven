@@ -26,5 +26,3 @@
 		<!-- My CSS -->
 		<link rel="stylesheet" href="<?= SITE_URL; ?>/styles/styles.css">
 	</head>
-	
-    <body>
