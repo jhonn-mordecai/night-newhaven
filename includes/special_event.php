@@ -2,7 +2,7 @@
     <h2 class="special-event-heading">Special Event</h2>
     <div class="event-banner">
         <a href="https://www.facebook.com/events/2457998777750248/" target="_blank">
-            <img src="{$IMG_PATH}/bowie-night-20.png" class="img-fluid" alt="Bowie Night" />
+            <img src="<?= IMG_PATH; ?>/bowie-night-20.png" class="img-fluid" alt="Bowie Night" />
         </a>
     </div>
     <div class="event-description">
