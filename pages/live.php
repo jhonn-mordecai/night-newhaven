@@ -1,6 +1,5 @@
 <?php 
 	
-	
 $live_streams = array(
 	
 	array(
@@ -14,9 +13,7 @@ $live_streams = array(
 		"caption" => "Filmed live at Partners Cafe, New Haven | August 2020",
 		"thumb" => "live-8-29-thumb-400x250.jpg",
 		"date" => "Aug. 29, 2020"
-	),
-	
+	),	
 );
 
-
-$smarty->assign("live_streams", $live_streams);
+?>
