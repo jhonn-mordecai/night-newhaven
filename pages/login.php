@@ -50,10 +50,8 @@ if (isset($_POST['login'])) {
     } else {
 
         $_SESSION['login'] = true;
-        header("Location: ". SITE_URL ."/admin");
+        header("Location: ". SITE_URL ."/admin.php");
     }
-} 
-
-$smarty->assign("error_msg", $error_msg);
+}
 
 ?>
