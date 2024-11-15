@@ -8,7 +8,7 @@ $night_dates = array();
 
 if ($dateResult > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
-
+		
 		$night_dates[] = $row['date'];
 	}
 } 
@@ -41,8 +41,5 @@ $night_logo = '
 	</g>
 	</svg>
 ';
-
-$smarty->assign("night_logo", $night_logo);
-$smarty->assign("night_dates", $night_dates);
 
 ?>

@@ -1,3 +1,5 @@
+let url = document.URL;
+
 $(document).ready(function(){
 	
 	//Handle the Ready For Submit checkbox/enable Playlist submit button
@@ -29,7 +31,7 @@ $(document).ready(function(){
 
 		$.ajax({
 			type:"POST",
-			url: SITE_URL+"/ajax.php",
+			url: url+"/ajax.php",
 			dataType: "json",
 			data: {
 				action:'select_playlist_date',
@@ -84,7 +86,7 @@ $(document).ready(function(){
 
 		$.ajax({
 			type:"POST",
-			url: SITE_URL+"/ajax.php",
+			url: url+"/ajax.php",
 			dataType: "json",
 			data: {
 				action:'search_playlist',
