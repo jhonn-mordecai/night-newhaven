@@ -5,9 +5,10 @@
 //if (!$_SESSION['login'] === true) {
 
 //if ($_SESSION['login'] != true) {
-if (!$_SESSION['login'] === true) {
-    header("Location: ". SITE_URL ."/login");
-}
+
+// if (!$_SESSION['login'] === true) {
+//     header("Location: ". SITE_URL ."/login");
+// }
 
 if (isset($_POST['logout'])) {
 
@@ -107,7 +108,7 @@ if (mysqli_num_rows($result)) {
     }
 }
 
-$smarty->assign("most_played_artists", $most_played_artists);
+//$smarty->assign("most_played_artists", $most_played_artists);
 
 
 $query = "SELECT artist, title, COUNT(*) AS count 
@@ -126,13 +127,13 @@ if (mysqli_num_rows($result)) {
     }
 }
 
-$smarty->assign("most_played_songs", $most_played_songs);
+//$smarty->assign("most_played_songs", $most_played_songs);
 
 
 mysqli_close($db_conn);
 
-$smarty->assign("success_msg", $success_msg);
-$smarty->assign("error_msg", $error_msg);
+// $smarty->assign("success_msg", $success_msg);
+// $smarty->assign("error_msg", $error_msg);
 
 
 
