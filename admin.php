@@ -140,5 +140,6 @@
 
     </div>
 
+    <?php require_once('includes/bottom_matter.php'); ?>
 </body>
 </html>

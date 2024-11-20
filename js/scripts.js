@@ -1,4 +1,4 @@
-let url = document.URL;
+var url = document.URL;
 
 $(document).ready(function(){
 	
@@ -83,16 +83,17 @@ $(document).ready(function(){
 	$('.playlist-search-button').on('click', function(){
 
 		var search_item = $('input[name=item-search]').val();
-
+		
 		$.ajax({
 			type:"POST",
-			url: url+"/ajax.php",
+			url: "ajax.php",
 			dataType: "json",
 			data: {
 				action:'search_playlist',
 				search_item: search_item
 			},
 			error: function(msg) {
+				
 				return false;
 			},
 			success: function(msg) {
@@ -111,7 +112,7 @@ $(document).ready(function(){
 	});
 
 	$('button.clear-search-field').on('click', function(){
-
+		
 		$('div.playlist-search-results').slideUp();
 		$('p.result-count').remove();
 		$('input[name=item-search]').val('');

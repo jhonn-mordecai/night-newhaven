@@ -44,7 +44,7 @@
 
                                     <option value="empty">--</option>
                                     <?php foreach($night_dates as $date): ?>
-                                        <option value="<?= $date; ?>"><?= date("F m, Y", strtotime($date)); ?></option>
+                                        <option value="<?= $date; ?>"><?= date("F j, Y", strtotime($date)); ?></option>
                                     <?php endforeach; ?>
 
                                 </select>

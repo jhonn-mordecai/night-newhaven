@@ -39,10 +39,11 @@ $success_msg = false;
 $artist = false;
 $title = false;
 $playlist = array();
-$date = $_POST['date'];
-$playlist_text = $_POST['playlist-text'];
 
 if (isset($_POST['submit-playlist'])) {
+
+    $date = $_POST['date'];
+    $playlist_text = $_POST['playlist-text'];   
 
     if (empty($date)) {
         
