@@ -109,9 +109,6 @@ if (mysqli_num_rows($result)) {
     }
 }
 
-//$smarty->assign("most_played_artists", $most_played_artists);
-
-
 $query = "SELECT artist, title, COUNT(*) AS count 
             FROM playlists WHERE playlists.date <> '2019-03-30' AND playlists.date <> '2018-03-31' 
             GROUP BY artist, title 
@@ -128,14 +125,6 @@ if (mysqli_num_rows($result)) {
     }
 }
 
-//$smarty->assign("most_played_songs", $most_played_songs);
-
-
 mysqli_close($db_conn);
-
-// $smarty->assign("success_msg", $success_msg);
-// $smarty->assign("error_msg", $error_msg);
-
-
 
 ?>
