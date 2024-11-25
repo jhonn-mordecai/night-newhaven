@@ -16,7 +16,7 @@
                     </p>
                     <p>ADMIN LOGIN</p>
                     <form id="login-form" role="form" method="post">
-                        <p><input class="form-control text-input" type="password" name="password" placeholder="Password" style="background-color:#181818;color:#cccccc;border-color:black;" /></p>
+                        <p><input class="form-control text-input" type="password" name="password" placeholder="Password" /></p>
                         <button class="btn btn-light btn-block" type="submit" name="login">Login</button>
                     </form>
                 </div>

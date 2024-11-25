@@ -333,6 +333,12 @@ section.login {
   width: 130px;
 }
 
+form#login-form .text-input {
+  background-color: #181818;
+  color: #cccccc;
+  border-color: black;
+}
+
 div.red-text {
   padding-top: 10px;
   font-size: 1.2rem;
@@ -621,7 +627,7 @@ section.page-not-found .back-home {
     margin-bottom: 10px;
   }
   .admin-container .col-contain-4,
-.admin-container .col-contain-2 {
+  .admin-container .col-contain-2 {
     -moz-column-count: 1;
          column-count: 1;
   }
