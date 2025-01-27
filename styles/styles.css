@@ -91,6 +91,15 @@ a.text-link:hover {
   text-decoration: none;
 }
 
+a:focus-visible,
+a.btn-goth-red:focus-visible,
+select:focus-visible,
+select:focus,
+.selector label.select-label:focus-visible {
+  outline: 2px solid rgb(194, 45, 45) !important;
+  outline-offset: 4px;
+}
+
 section.top-section {
   background-color: #141414;
   height: 350px;
@@ -146,6 +155,13 @@ section.intro .special-event h2 {
 section.intro .special-event .event-banner {
   border: 1px solid #cccccc;
   opacity: 0.9;
+}
+section.intro .special-event .event-banner a img {
+  transition: 0.2s;
+}
+section.intro .special-event .event-banner a:hover img {
+  transition: 0.2s;
+  opacity: 0.4;
 }
 section.intro .special-event .event-description {
   padding-top: 25px;

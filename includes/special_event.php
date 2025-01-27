@@ -8,9 +8,9 @@
     <div class="event-description">
         <h3 class="event-sub-head">Bowie Night</h3>
         <p class="font-weight-bold">March 29, 2025</p>
-        
-        <!-- <p>
-            <a class="btn btn-lg btn-goth-red rsvp-link" href="" target="_blank">- RSVP -</a>
-        </p> -->
+        <p>Turn and face the strange...</p>
+        <p>
+            <a class="btn btn-lg btn-goth-red rsvp-link" title="RSVP for Event" href="https://www.facebook.com/events/1242403200191806" target="_blank">- RSVP -</a>
+        </p>
     </div>
 </div>

@@ -123,6 +123,15 @@ a.text-link {
 	}
 }
 
+a:focus-visible, 
+a.btn-goth-red:focus-visible, 
+select:focus-visible,
+select:focus,
+.selector label.select-label:focus-visible {
+	outline:2px solid $goth-red !important;
+	outline-offset:4px;
+}
+
 section.top-section {
 	background-color:$dark-gray;
 	height:350px;
@@ -181,6 +190,13 @@ section.intro {
 		.event-banner {
 			border:$standard-border;
 			opacity:0.9;
+
+			a img {transition:$standard-transition;}
+
+			a:hover img {
+				transition:$standard-transition;
+				opacity:0.4;
+			}
 		}
 
 		.event-description {
