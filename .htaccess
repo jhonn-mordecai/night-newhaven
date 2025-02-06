@@ -1,13 +1,5 @@
-#Options -Indexes
-#RewriteEngine On
-#Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-##### Catch-all
-#RewriteRule ^([a-zA-Z0-9-_]+)$ index.php?page=$1 [L,QSA]
-
-#RewriteRule ^$ index.php?page=default [L,QSA]
-#RewriteRule ^login$ index.php?page=login [L,QSA]
-#RewriteRule ^admin$ index.php?page=admin [L,QSA]
-#RewriteRule ^live$ index.php?page=live [L,QSA]
-
-#ErrorDocument 404 /index.php?page=404
+ErrorDocument 404 /404.php
