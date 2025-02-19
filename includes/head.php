@@ -12,9 +12,9 @@
 		<meta property="og:title" content="NIGHT" />
 		<meta property="og:site_name" content="NIGHT" />
 		<meta property="og:description" content="NIGHT is a dark dance party in New Haven, CT, taking place on the 2nd Saturday of each month." />
-		<meta property="og:image" content="http://nightnewhaven.club/img/night-og.jpg" />
+		<meta property="og:image" content="https://nightnewhaven.club/img/night-og.jpg" />
 		<meta property="og:image:type" content="image/jpg" />
-		<meta property="og:url" content="http://nightnewhaven.club" />
+		<meta property="og:url" content="https://nightnewhaven.club" />
 				
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="<?= IMG_PATH; ?>/favicon_blk.png" />

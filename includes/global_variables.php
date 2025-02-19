@@ -15,8 +15,8 @@ if (substr($_SERVER["SERVER_ADDR"], 0, 7) == "192.168" || $_SERVER["SERVER_ADDR"
 	define ("DB_USER", "johnmord_admin");
 	define ("DB_PASS", "ySIx;wi#cD1)");
 	define ("DB_NAME", "johnmord_night");
-	define ("SITE_URL", "http://nightnewhaven.club");
-	define ("IMG_PATH", "http://nightnewhaven.club/img");
+	define ("SITE_URL", "https://nightnewhaven.club");
+	define ("IMG_PATH", "https://nightnewhaven.club/img");
 }
 
 define ("CONTACT_EMAIL", "night.dance.partners@gmail.com");
