@@ -32,8 +32,6 @@
                         </div>
                     </div>
 
-                    <?php include('includes/special_event.php'); ?>
-
                 </div>
             </section>
 
