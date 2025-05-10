@@ -12,7 +12,7 @@ $standard-border:1px solid #cccccc;
 $admin-border:1px solid #666666;
 $dark-gray: #141414;
 $opaque-white: rgba(255,255,255,0.05);
-$gradient-dark: rgba(17,17,17,0.8);
+$gradient-dark: rgba(14,14,14,0.8);
 $gradient-transparent: rgba(0,0,0,0);
 $goth-red: rgb(194,45,45);
 $sans-serif: 'Roboto',Helvetica,Arial,sans-serif;
@@ -144,15 +144,17 @@ section.top-section {
 	text-align:center;
 }
 
-section.intro {
-	
-	padding-top:65px;
-	background:$gradient-dark;
-	background: -moz-linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
-	background: -webkit-linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
-	background: -o-linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
+.dark-fade {
+	background: $gradient-dark;
+	background: -moz-linear-gradient($gradient-transparent 2%, $gradient-dark 15%);
+	background: -webkit-linear-gradient($gradient-transparent 2%, $gradient-dark 15%);
+	background: -o-linear-gradient($gradient-transparent 2%, $gradient-dark 15%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#181818',GradientType=0 );
-	background: linear-gradient($gradient-transparent 5%, $gradient-dark 15%);
+	background: linear-gradient($gradient-transparent 2%, $gradient-dark 15%);
+}
+
+section.intro {
+	padding-top:65px;
 	text-align:center;
 
 	.intro-text {
@@ -236,11 +238,6 @@ section.intro {
 
 section.playlists {
 
-	background:$gradient-dark;
-	background: -moz-linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
-	background: -webkit-linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
-	background: -o-linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
-	background: linear-gradient($gradient-dark 80%, $gradient-transparent 95%);
 	padding-top:0;
 	font-size:1.3rem;
 	text-align:center;
