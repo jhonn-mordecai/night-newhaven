@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Roboto:300,400");
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 body, html {
   height: 100%;
   min-height: 100%;
@@ -115,7 +126,7 @@ section.top-section {
 .dark-fade {
   background: rgba(14, 14, 14, 0.8);
   background: -o-linear-gradient(rgba(0, 0, 0, 0) 2%, rgba(14, 14, 14, 0.8) 15%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#111111", endColorstr="#181818",GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#181818',GradientType=0 );
   background: linear-gradient(rgba(0, 0, 0, 0) 2%, rgba(14, 14, 14, 0.8) 15%);
 }
 
@@ -125,9 +136,9 @@ section.intro {
 }
 section.intro .intro-text {
   padding: 40px 0;
-  border-bottom: 1px solid #cccccc;
   font-size: 1.2rem;
   line-height: 175%;
+  position: relative;
 }
 section.intro .intro-text p {
   margin-bottom: 40px;
@@ -136,16 +147,23 @@ section.intro .intro-text p:last-child {
   margin-bottom: 0;
 }
 section.intro .night-info {
-  padding: 40px 0;
-  border-bottom: 1px solid #cccccc;
   line-height: 250%;
+  border: 4px dotted #cccccc;
+  max-width: 600px;
+  position: relative;
+  margin-inline: auto;
 }
 section.intro .night-info .info-inner {
   background-color: #141414;
   padding: 25px;
   font-size: 1.5rem;
 }
-section.intro .night-info .info-inner p.details {
+section.intro .night-info .info-inner svg.logo {
+  width: 70px;
+  position: relative;
+  top: 10px;
+}
+section.intro .night-info .info-inner p:last-child {
   margin-bottom: 0;
 }
 section.intro .special-event {

@@ -23,19 +23,21 @@
                                 NEW HAVEN, CT
                             </p>
                             <p>
-                                GOTH - DARKWAVE - POST-PUNK - INDUSTRIAL<br>
+                                GOTH - DARKWAVE - POST-PUNK - &AElig;THEREAL WAVE<br>
                                 AND OTHER MUSIC TO PLAY IN THE DARK
                             </p>
-                            <!-- <p>A welcoming place for the Goths, Rivetheads, Baby Bats, Cyberpunks, Thrashers, Fetish Queens, Pastels, Elders, the Dark-Curious, and Alternative types. All will find a home in the recesses of ₦‡₲H†.</p>					 -->
                         </div>
 
                         <div class="night-info">
                             <div class="info-inner">
                                 <p>
-                                    NIGHT is every 2nd Saturday <br>
+                                    <?= $night_logo; ?> <span class="sr-only">NIGHT</span> is Every 2nd Saturday <br>
                                     <small style="font-style:italic;">(sometimes also 5th Saturday)</small>
                                 </p> 
-                                <p class="details"><a class="text-link" href="https://www.partnerscafe.com/" title="" target="_blank">Partners Cafe</a> | 365 Crown St., New Haven | 10 p.m. | FREE</p>
+                                <p class="details">
+                                    <small>at</small> <a class="text-link" href="https://www.partnerscafe.com/" title="" target="_blank">Partners Cafe</a>
+                                    <br />
+                                    365 Crown St., New Haven | 10 p.m. | FREE</p>
                             </div>
                         </div>
 

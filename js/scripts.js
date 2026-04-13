@@ -125,7 +125,7 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 
-		var svg = $('svg g');
+		var svg = $('.logo-container svg g');
 		var scroll_trigger = $(window).scrollTop();
 
 		if (scroll_trigger > 165) {
