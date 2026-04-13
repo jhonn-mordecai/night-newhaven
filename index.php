@@ -37,7 +37,7 @@
                                 <p class="details">
                                     <small>at</small> <a class="text-link" href="https://www.partnerscafe.com/" title="" target="_blank">Partners Cafe</a>
                                     <br />
-                                    365 Crown St., New Haven | 10 p.m. | FREE</p>
+                                    365 Crown St., New Haven <span class="hide-pipe">| </span><br class="time-break" />10 p.m. | FREE</p>
                             </div>
                         </div>
 

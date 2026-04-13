@@ -163,6 +163,9 @@ section.intro .night-info .info-inner svg.logo {
   position: relative;
   top: 10px;
 }
+section.intro .night-info .info-inner .time-break {
+  display: none;
+}
 section.intro .night-info .info-inner p:last-child {
   margin-bottom: 0;
 }
@@ -692,6 +695,22 @@ section.page-not-found .back-home {
   }
 }
 @media only screen and (max-width: 515px) {
+  section.intro .intro-text {
+    font-size: 1rem;
+    line-height: 175%;
+  }
+  section.intro .night-info {
+    line-height: 250%;
+  }
+  section.intro .night-info .info-inner {
+    font-size: 1.3rem;
+  }
+  section.intro .night-info .info-inner .hide-pipe {
+    display: none;
+  }
+  section.intro .night-info .info-inner br.time-break {
+    display: inline;
+  }
   section.intro .special-event .event-description h3.event-sub-head br {
     display: inline;
   }
@@ -702,16 +721,6 @@ section.page-not-found .back-home {
   }
   svg.logo {
     width: 325px;
-  }
-  section.intro .intro-text {
-    font-size: 1rem;
-    line-height: 175%;
-  }
-  section.intro .night-info {
-    line-height: 250%;
-  }
-  section.intro .night-info .info-inner {
-    font-size: 1.3rem;
   }
   section.intro .special-event .event-description h3.event-sub-head {
     font-size: 2rem;

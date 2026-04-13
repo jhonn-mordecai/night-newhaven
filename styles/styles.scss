@@ -196,6 +196,8 @@ section.intro {
 				top:10px;
 			}
 
+			.time-break {display:none;}
+
 			p:last-child {
 				margin-bottom:0;
 			}
@@ -861,6 +863,23 @@ section.page-not-found {
 @media only screen and (max-width:515px) {
 	
 	section.intro {
+
+		.intro-text {
+			font-size:1rem;
+			line-height:175%;
+		}
+	
+		.night-info {
+			line-height:250%;
+	
+			.info-inner {
+				font-size:1.3rem;
+
+				.hide-pipe {display:none;}
+				br.time-break {display:inline;}
+			}
+		}
+
 		.special-event {
 			.event-description h3.event-sub-head br {display:inline;}
 		}
@@ -878,18 +897,6 @@ section.page-not-found {
 	}
 
 	section.intro {
-		.intro-text {
-			font-size:1rem;
-			line-height:175%;
-		}
-	
-		.night-info {
-			line-height:250%;
-	
-			.info-inner {
-				font-size:1.3rem;
-			}
-		}
 
 		.special-event {
 
